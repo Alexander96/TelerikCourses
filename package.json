@@ -1,0 +1,14 @@
+{
+  "name": "TelerikCourses",
+  "version": "0.0.0",
+  "description": "TelerikCourses",
+  "main": "server.js",
+  "author": {
+    "name": "Alex",
+    "email": ""
+  },
+  "dependencies": {
+    "express": "^4.1.0",
+    "jade": "^1.3.1"
+  }
+}
