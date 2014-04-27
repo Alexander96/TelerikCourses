@@ -30,9 +30,33 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="public\app\app.js" />
+    <Compile Include="public\lib\angular-cookies.min.js" />
+    <Compile Include="public\lib\angular-resource.js" />
+    <Compile Include="public\lib\angular-route.min.js" />
+    <Compile Include="public\lib\angular.min.js" />
+    <Compile Include="public\lib\bootstrap.min.js" />
+    <Compile Include="public\lib\jquery-2.1.0.js" />
+    <Compile Include="public\lib\toastr.min.js" />
     <Compile Include="server.js" />
     <Content Include="package.json" />
-    <Content Include="README.md" />
+    <Content Include="public\css\bootstrap.min.css" />
+    <Content Include="public\css\site.styl" />
+    <Content Include="public\css\toastr.min.css" />
+    <Content Include="server\views\includes\layout.jade" />
+    <Content Include="server\views\includes\scripts.jade" />
+    <Content Include="server\views\index.jade" />
+    <Content Include="server\views\partials\home.jade" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="public\" />
+    <Folder Include="public\lib\" />
+    <Folder Include="public\css\" />
+    <Folder Include="public\app\" />
+    <Folder Include="server\" />
+    <Folder Include="server\views\" />
+    <Folder Include="server\views\includes\" />
+    <Folder Include="server\views\partials\" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
   <ProjectExtensions>
