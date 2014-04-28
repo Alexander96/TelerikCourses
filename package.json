@@ -3,6 +3,10 @@
   "version": "0.0.0",
   "description": "TelerikCourses",
   "main": "server.js",
+  "engines": {
+	"node": "0.10.x",
+	"npm": "1.4.x"
+  },
   "author": {
     "name": "Alex",
     "email": ""

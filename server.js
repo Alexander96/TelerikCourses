@@ -1,13 +1,20 @@
 ﻿var http = require('http'),
     express = require('express'),
-    port = process.env.port || 1234,
+    port = process.env.PORT || 1234,
     bodyParser = require('body-parser');
     stylus = require('stylus'),
     mongoose = require('mongoose');
     env = process.env.NODE_ENV || 'development';
 
 var app = express();
-mongoose.connect('mongodb://localhost/telerikcourses');
+
+if ( env == 'development' ) {
+    mongoose.connect('mongodb://localhost/telerikcourses');
+}
+else {
+    mongoose.connect( 'mongodb://admin:ivanebogitovae@ds059947.mongolab.com:59947/telerikacademycourses' );
+}
+
 var db = mongoose.connection;
 db.once('open', function(err){
     if(err) {console.log('Database could not be opened ' + err);return;}
@@ -58,3 +65,4 @@ app.get('/', function(req, res){
 
 app.listen(port);
 console.log('Server running on port ' + port);
+console.log(env);
