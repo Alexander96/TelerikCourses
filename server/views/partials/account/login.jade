@@ -1,0 +1,6 @@
+﻿.navbar-right
+    form.navbar-form
+        .form-group
+            input.form-control(type="text" required="required" placeholder="User Name" ng-model="user.userName")
+            input.form-control(type="password" required="required" placeholder="Password" ng-model="user.password")
+        button.btn.btn-primary(ng-click="login(user)") Login
