@@ -10,7 +10,7 @@ module.exports = function ( app, config ) {
     app.set( 'views', config.rootPath + '/server/views' );
     app.use( cookieParser() );
     app.use( bodyParser() );
-    app.use( session() );
+    app.use( session({secret: 'magicunicorn'}) );
     app.use( stylus.middleware( {
         src: config.rootPath + '/public', // .styl files are located in `views/stylesheets`
         compile: function ( str, path ) { // optional, but recommended
