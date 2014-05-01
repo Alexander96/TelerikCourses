@@ -13,8 +13,10 @@
     $scope.logout = function(){
         auth.logout().then(function(){
             notifier.success('Successfully logout!');
-            $scope.user.username = '';
-            $scope.user.password = '';
+            if($scope.user){
+                $scope.user.username = '';
+                $scope.user.password = '';
+            }
             $location.path('/');
         });
     }

@@ -33,6 +33,8 @@
     <Compile Include="public\app\account\auth.js" />
     <Compile Include="public\app\account\identity.js" />
     <Compile Include="public\app\account\loginController.js" />
+    <Compile Include="public\app\account\usersResource.js" />
+    <Compile Include="public\app\admin\userListController.js" />
     <Compile Include="public\app\app.js" />
     <Compile Include="public\app\common\notifier.js" />
     <Compile Include="public\app\main\mainController.js" />
@@ -48,9 +50,12 @@
     <Compile Include="server\config\config.js" />
     <Compile Include="server\config\express.js" />
     <Compile Include="server\config\mongoose.js" />
+    <Compile Include="server\config\passport.js" />
     <Compile Include="server\config\routes.js" />
     <Content Include="package.json" />
     <Content Include="Procfile.txt" />
+    <Content Include="public\app\account\signup.jade" />
+    <Content Include="public\app\admin\users-list.jade" />
     <Content Include="public\css\bootstrap.min.css" />
     <Content Include="public\css\site.styl" />
     <Content Include="public\css\toastr.min.css" />
@@ -68,6 +73,7 @@
     <Folder Include="public\app\main\" />
     <Folder Include="public\app\account\" />
     <Folder Include="public\app\common\" />
+    <Folder Include="public\app\admin\" />
     <Folder Include="public\lib\" />
     <Folder Include="public\css\" />
     <Folder Include="public\app\" />
